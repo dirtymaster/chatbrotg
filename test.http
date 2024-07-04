@@ -1,0 +1,34 @@
+####### ggg
+POST http://localhost:8080/api/users/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Rafael",
+  "email": "V9QpW@example.com",
+  "passwordHash": "password"
+}
+
+####### gggg
+POST http://localhost:8080/api/users/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "email": "V9QpW@example.com",
+  "passwordHash": "password"
+}
+
+######## gggg
+GET http://localhost:8080/api/messages
+Accept: application/json
+
+####### gggg
+POST http://localhost:8080/api/messages/send
+Content-Type: application/json
+Accept: application/json
+
+{
+  "authorId": "e60e5f2f-e444-425f-bf28-780809d89cdf",
+  "content": "Hello, World!"
+}
