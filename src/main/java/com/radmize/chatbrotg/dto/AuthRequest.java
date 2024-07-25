@@ -1,11 +1,15 @@
 package com.radmize.chatbrotg.dto;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
 @Data
 @RequiredArgsConstructor
-public class LoginRequest {
+public class AuthRequest {
+    private String name;
+    @NotNull
     private String email;
-    private String passwordHash;
+    @NotNull
+    private String password;
 }
