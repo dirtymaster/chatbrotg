@@ -1,5 +1,9 @@
 .gradle
-build/
+build/*
+build/native/*
+!build/native/
+build/native/nativeCompile/*
+!build/native/nativeCompile/reflect-config.json
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
